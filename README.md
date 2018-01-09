@@ -1,5 +1,6 @@
 # ConvertFrog
 GUI for my handbrake/mediainfo batch script for converting specific video files within a mixed directory.
+Split this project off the batch-convert-script to keep it neat.
 
 # UPDATE: GUI NOW HERE!!
 I added a simple XML-Based GUI to the batch script using FroG (Frontend Generator). In the folder is everything needed to run the GUI, including a copy of frog.exe. Download entire "ConvertFrog" folder to use.
