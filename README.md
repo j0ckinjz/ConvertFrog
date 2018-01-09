@@ -10,7 +10,8 @@ To launch the GUI, start the "ConvertFroG" shortcut.
 You'll be able to set Source and Destination folders via browse folder. Currently *5* MediaInfo parameters are available (BitRate, Width, Height, Framerate, Filesize; more to come). 6 comparison operators are available. You can manually set the value to compare. And lastly, most of the handbrake encode settings are available for manual edit. I plan on GUI'ing this secton but there are a lot of options for handbrake. Refer to HandbrakeCLI FAQ to learn to edit this code. I'll attach printouts of handbrake/mediainfo parameters/help.
 
 # YOU MUST DOWNLOAD MEDIAINFO AND HANDBRAKE COMMAND LINE INTERFACES AND COPY TO /BIN FOLDER.
-
+## Creating desktop shortcut:
+Run FroG.exe. Select "Create Shortcut..." from options. Drag ConvertFroG.frontend onto window. Hit Execute.
 ## Update 2:
 Script is as done as it's going to be. The interface (frog) doesn't have enough power to make a proper GUI for the handbrake settings. I feel leaving it as CLI would provide more flexibility. Updated icon & banner and officially named the GUI "ConvertFroG".
 
