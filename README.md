@@ -11,6 +11,7 @@ You'll be able to set Source and Destination folders via browse folder. Currentl
 
 # YOU MUST DOWNLOAD MEDIAINFO AND HANDBRAKE COMMAND LINE INTERFACES AND COPY TO /BIN FOLDER.
 https://mediaarea.net/en/MediaInfo/Download/Windows Download CLI version, copy exe to /bin folder. Should be named MediaInfo.exe.
+
 https://handbrake.fr/downloads2.php Copy exe to /bin folder. Should be named HandBrakeCLI.exe.
 
 ## Creating desktop shortcut:
