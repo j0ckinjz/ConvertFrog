@@ -43,7 +43,7 @@ del %result%
 echo File is: "%filepath%"
 echo Width is: %width%
 ::Compare variable to set value; pass onto handbrake if comparison passes.
-if %width% %~4 (call :hb "%hbdest%" "%filepath%" %5 %6)
+if %width% %~4 (call :hb "%hbdest%" "%filepath%" %5 %6) else (echo No need to transcode.)
 exit /b
 
 :hb
