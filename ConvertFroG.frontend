@@ -13,12 +13,14 @@
 				<control type="columnset">
 					<column>
 						<control type="combobox" caption="Parameter" width="110" hint="Select the parameter you would like to compare to your set value.">
-							<item caption="Video Width" commandline="&quot;--Inform=Video;%Width%&quot;" selected="true"/>
-							<item caption="Video Height" commandline="&quot;--Inform=Video;%Height%&quot;"/>
-							<item caption="General Bitrate" commandline="&quot;--Inform=General;%BitRate%&quot;"/>
-							<item caption="File Size" commandline="&quot;--Inform=General;%FileSize%&quot;"/>
-							<item caption="Frame Rate" commandline="&quot;--Inform=General;%FrameRate%&quot;"/>
-							<item caption="CodecID" commandline="&quot;--Inform=General;%CodecID%&quot;"/>
+							<item caption="Video Width" commandline="&quot;--Inform=Video;%%Width%%&quot;" selected="true"/>
+							<item caption="Video Height" commandline="&quot;--Inform=Video;%%Height%%&quot;"/>
+							<item caption="General Bitrate" commandline="&quot;--Inform=General;%%BitRate%%&quot;"/>
+							<item caption="File Size" commandline="&quot;--Inform=General;%%FileSize%%&quot;"/>
+							<item caption="Frame Rate" commandline="&quot;--Inform=General;%%FrameRate%%&quot;"/>
+							<item caption="CodecID" commandline="&quot;--Inform=General;%%CodecID%%&quot;"/>
+							<item caption="VidCodecID" commandline="&quot;--Inform=Video;%%CodecID%%&quot;"/>
+							<item caption="Format" commandline="&quot;--Inform=Video;%%Format%%&quot;"/>
 						</control>
 					</column>
 					<column>
