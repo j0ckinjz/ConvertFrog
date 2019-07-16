@@ -15,7 +15,7 @@ Call :dequote %_srcfix% %_destfix%
 if not !_src:~-1!==\ set _src=!_src!\
 if not !_dest:~-1!==\ set _dest=!_dest!\
 ::Begin For loop
-for /R %src% %%j in (*.*) do (ENDLOCAL & set "filepath=%%j" & call :sub %_src% %_dest% %3 %4 %5 %6)
+for /R %src% %%j in (*.*) do if %%~xj NEQ .srt (ENDLOCAL & set "filepath=%%j" & call :sub %_src% %_dest% %3 %4 %5 %6)
 Pause
 cmd /k
 exit /b
