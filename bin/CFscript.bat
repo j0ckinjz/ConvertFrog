@@ -1,7 +1,7 @@
 @echo off
-::Set variables to exe & temp txt for width value. Exe's should be in root of batch folder.
+::Set variables to exe & temp txt for value. Exe's should be in root of batch folder.
 set mediainfo="%~dp0MediaInfo.exe"
-set result="%~dp0width.txt"
+set result="%~dp0value.txt"
 set handbrake="%~dp0HandBrakeCLI.exe"
 ::Enable Delayed Expansiopn to allow FOR statement to update parameter with each file.
 SETLOCAL EnableDelayedExpansion
@@ -38,12 +38,12 @@ Set "hbdest=%newpath:_= %"
 ::Run mediainfo, write result to temp txt
 %mediainfo% %3 "%filepath%" > %result%
 ::set result to a variable we can compare
-set /P width=<%result%
+set /P value=<%result%
 del %result%
 echo File is: "%filepath%"
-echo Width is: %width%
+echo Value is: %value%
 ::Compare variable to set value; pass onto handbrake if comparison passes.
-if %width% %~4 (call :hb "%hbdest%" "%filepath%" %5 %6) else (echo No need to transcode.)
+if %value% %~4 (call :hb "%hbdest%" "%filepath%" %5 %6) else (echo No need to transcode.)
 exit /b
 
 :hb
