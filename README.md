@@ -1,5 +1,6 @@
 # ConvertFrog
 GUI for my handbrake/mediainfo batch script for converting specific video files within a mixed media directory.
+
 I split this project off the batch-convert-script to keep it neat.
 
 # UPDATE: GUI NOW HERE!!
